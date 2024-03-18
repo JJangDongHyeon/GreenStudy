@@ -7,8 +7,8 @@ public class ConditionalOperator {
         int num = (int) (Math.random() * 10) + 1;
 //        String s;
         //s = num % 2 == 0 ? "짝" : "홀";
-        System.out.print(num + "은(는)" );
-        System.out.print(num % 2 == 0 ? "짝수입니다." : "홀수입니다.") ;
+        System.out.print(num + "은(는)" + (num % 2 == 0 ? "짝수입니다." : "홀수입니다."));
+        //System.out.print() ;
 
      }
 }
