@@ -14,7 +14,8 @@ public class InfinityWhileLoop {
                if(input == 0){
 
 
-                break;}
+                break;
+               }
             }
             System.out.println("ㄲㄲㄲㄲㄲㄲㄲㄲ끄ㅡㅡㅡㅡㅡㅡㅡㅌㅌㅌㅌㅌㅌㅌㅌㅌ");
 

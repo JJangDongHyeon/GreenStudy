@@ -6,7 +6,8 @@ public class MissionSumEvenForLoop {
           int a=0;
         for(int i = 0 ; i < 101 ; i++) {
             if (i % 2 == 0) {
-                a = a + i;
+               // a = a + i;
+                a += i;
             }
         }
             System.out.print(a);

@@ -10,6 +10,7 @@ public class WhileLoop {
         while(input != 0) {
             System.out.print("숫자를 입력해 주세요. (종료:0) >> ");
             input = scan.nextInt();
+
         }
         System.out.println("ㄲㄲㄲㄲㄲㄲㄲㄲ끄ㅡㅡㅡㅡㅡㅡㅡㅌㅌㅌㅌㅌㅌㅌㅌㅌ");
 
