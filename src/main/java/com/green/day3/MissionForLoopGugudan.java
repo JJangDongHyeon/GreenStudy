@@ -6,7 +6,7 @@ public class MissionForLoopGugudan {
         System.out.println("구구단 " + dan + "단");
         for(int i = 1 ; i<10 ; i++ ){
             System.out.println(dan + " X " + i + " = " + (dan * i) + " ");
-            //System.out.printf("%d X %d = %d\n", dan, i, (dan * 1));
+            //System.out.printf("%d X %d = %d\n", dan, i, (dan * i));
 
 
         }
