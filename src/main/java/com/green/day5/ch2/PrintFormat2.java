@@ -16,7 +16,7 @@ public class PrintFormat2 {
 
 
         //저의 이름은 홍길동입니다. 나이는 22살, 키는 178.2cm, 혈액형은 A형, 싱글입니다.
-        System.out.printf("저의 이름은 %s입니다. 나이는 %s살 , 키는 %scm, 혈액형은 %s형\n",
-                name , age , height , bloodType);
+        System.out.printf("저의 이름은 %s입니다. 나이는 %s살 , 키는 %scm, 혈액형은 %s형, 현재 %s\n",
+                name , age , height , bloodType , single);
     }
 }
