@@ -7,9 +7,13 @@ public class PrintFormat {
         //리터럴 정수는 int 타입
         //long타입 리터롤로 변경하려면 끝에 l, L 붙이면 된다.
         long big = 100_000_000_000L;
-
+        //%d > 정수 : byte , short , int , long
+        //%s > 문자열 : String , "직접 작성한 값"
+        //%f > 실수 : float , double
+        //%b > 불린 : booblean
+        //%c > 문자 : char
         System.out.printf("c=%c, %d\n", c, (int)c); //%c = 캐릭터 %d =정수 %s=문자열 %f= 실수값
-        System.out.printf("finger=[%5d]\n", finger); //%와d사이에 숫자는 차지하는 칸 수
+        System.out.printf("finger=[%5d]\n", finger); //%와d사이의 숫자는 차지하는 칸 수
         System.out.printf("finger=[%-5d]\n", finger);// -를 주면 왼쪽 정렬
         System.out.printf("finger=[%05d]\n", finger);//빈칸을 0으로 채우겠다.
         System.out.println(big);

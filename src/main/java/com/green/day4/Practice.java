@@ -3,20 +3,15 @@ package com.green.day4;
 import java.util.Scanner;
 
 public class Practice {
+
     public static void main(String[] args) {
-        Scanner scan= new Scanner(System.in);
-        int input;
-        int a = 0;
-        while(true){
-            System.out.println("숫자를 입력해주세요.");
-            input = scan.nextInt();
-            if(input == 10) {break;}
-            a += input ;
+        //삼항식, 조건식
+        // 식 ? true일 때 : false일 때;
+        int num = (int) (Math.random() * 10) + 1;
+        String s = "짝";
 
+        s = 10 % 2 == 0 ? "짝" : "홀";
 
-
-
-        }
-        System.out.println("최종합산:"+ a);
+        System.out.println(num + s);
     }
 }

@@ -22,9 +22,15 @@ public class Naming {
     //int 1abc;
     //4.특수기호는 '_' , '$'만 허용
 
-    //5. 여러 단어로 구성된 이름은 카멜 케이스 기법을 사용한다.
+    //5. 여러 단어로 구성된 이름은 카멜 케이스 기법을 사용한다.(변수와 메소드명)
     //e,g last, index, of >>> lastIndexOf
     //    happy , sunday, morning >>> happySundayMorning
+
+    //6. 케밥 케이스 기법
+    // happy-sunday-morning
+
+    //7. 스네이크 케이스 기법 (데이터베이스 할때 쓸예정)
+    // happy_sunday_morning
     int _123, $123;
     //<클래스 명명규칙>
     //1. 클래스 이름의 첫 글자는 무조건 대문자로 시작!
