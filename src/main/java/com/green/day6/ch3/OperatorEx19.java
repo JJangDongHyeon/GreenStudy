@@ -10,7 +10,7 @@ public class OperatorEx19 {
 
         int x2 = 7;
         System.out.printf("x2 / y = %d (몫)\n" , x2 / y);
-        System.out.printf("x2 %% y = %d (나머지)\n" , x2 % y);
+        System.out.printf("x2 %% y = %d (나머지)\n" , x2 % y);  //%d %s등등 헷갈리수있기 떄문에 %%를 붙어야 그냥%로 인식
 
         System.out.println(10 % 8); //2
         System.out.println(-10 % 8); //-2

@@ -7,7 +7,7 @@ public class OperatorEx22 {
             double d = 0.1;
             double d2 = f;
 
-            System.out.printf("%f == %f %b\n" , 10.0 , 10.0f , 10.0 == 10.0f); //%b 는 불린
+            System.out.printf("%f == %f %b\n" , 10.0 , 10.0f , 10.0 == 10.0f); //%b 는 불린 // .0이라 정수판정
             System.out.printf("%f == %f %b\n" , f , d , f == d);  //float과 double은 유사치에 가까운것이지 같은 값이 아님
             System.out.printf("%f == %f %b\n" , f , d , (double)f == d);
             System.out.printf("%f == %f %b\n" , f , d , f == (float)d );

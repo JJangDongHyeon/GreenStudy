@@ -7,8 +7,8 @@ public class FlowEx1 {
         System.out.printf("x = %d 일 때, 참인 것은?\n" , x);
 
         String name = "슬랙";
-        char bloodType = 'B';
-        System.out.printf("%s의 혈액형은 %c형입니다." , name , bloodType);
+        char bloodType = 'O';
+        System.out.printf("%s의 혈액형은 %c형입니다.\n" , name , bloodType);
 
 
 

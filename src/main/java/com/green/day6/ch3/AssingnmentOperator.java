@@ -9,8 +9,8 @@ public class AssingnmentOperator {
 
             x = y = 3;
             //연산 순서
-            y = 3;
-            x = y;
+//            y = 3;
+//            x = y;
             System.out.println(x);
             System.out.println(y);
 
