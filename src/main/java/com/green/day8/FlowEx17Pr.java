@@ -2,16 +2,12 @@ package com.green.day8;
 
 public class FlowEx17Pr {
     public static void main(String[] args) {
-        int star = 10;
-        for(int i = 1 ; i <= star ; i ++){
-           for(int z =star-i ; z > 0  ; z--){
-               System.out.print("_");
-           }for(int x=0; x<i ; x++){
-                System.out.print("*");
+        for(int i = 1 ; i <= 5 ; i ++) {
+            for (int z = 0; z <= 5; z++) {
+                System.out.print(i);
             }
             System.out.println();
         }
-
     }
 }
  /*
