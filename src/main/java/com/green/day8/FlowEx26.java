@@ -10,9 +10,9 @@ public class FlowEx26 {
         int i = 0;
         int sum = 0;
         while(true) {
-            int result = sum + i +1;
-
-            if(result > 104) {
+            int result = sum + i ;
+            System.out.printf("sum: %d i: %d\n", sum , i );
+            if(result > 100) {
                 break;
             }
             sum += ++i;
