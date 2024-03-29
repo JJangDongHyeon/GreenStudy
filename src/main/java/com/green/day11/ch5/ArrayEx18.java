@@ -1,4 +1,4 @@
-package com.green.day9.day11.ch5;
+package com.green.day11.ch5;
 
 public class ArrayEx18 {
     public static void main(String[] args) {
@@ -8,6 +8,7 @@ public class ArrayEx18 {
                 , {30, 30, 30,}
                 , {40, 40, 40,}
         };
+
                 int sum = 0 ;
                 for (int i = 0 ; i < score[0].length ; i++){
                     for ( int z= 0 ; z < score.length ; z++){

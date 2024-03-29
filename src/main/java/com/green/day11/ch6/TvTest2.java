@@ -1,8 +1,9 @@
-package com.green.day9.day11.ch6;
+package com.green.day11.ch6;
 
 public class TvTest2 {
     public static void main(String[] args) {
         Tv tv = new Tv();
+
         tv.channel = 10;
 //        tv = new Tv();
 //        System.out.println(tv.channel);

@@ -1,4 +1,4 @@
-package com.green.day9.day11.ch6;
+package com.green.day11.ch6;
 
 public class TvTest {
     public static void main(String[] args) {
