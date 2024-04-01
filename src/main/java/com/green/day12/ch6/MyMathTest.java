@@ -11,7 +11,7 @@ public class MyMathTest {
         System.out.println(result);
 
         String n1 = "d";
-        System.out.println(myMath.print("n1"));
+        System.out.println(myMath.print(n1));
 
         System.out.println(myMath.mm);
         myMath.mm = 5000;
