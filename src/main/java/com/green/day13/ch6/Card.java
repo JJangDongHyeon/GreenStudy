@@ -5,3 +5,10 @@ public class Card {
     String number;
 }
 
+class Make{
+    void cardMAke(){
+
+
+    }
+
+}
