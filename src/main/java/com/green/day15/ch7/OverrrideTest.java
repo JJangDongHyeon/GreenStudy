@@ -5,7 +5,7 @@ public class OverrrideTest {
         Parent p = new Parent(55);
         System.out.println(p.age);
         Child child = new Child();
-        child.attack(); //메소드 자식먼저 찾고 있으면 자식꺼 쓰고 없으면 다시 위로 올라가서 부모님꺼에서 찾음.
+//        child.attack(); //메소드 자식먼저 찾고 있으면 자식꺼 쓰고 없으면 다시 위로 올라가서 부모님꺼에서 찾음.
         child.doubleattack();
     }
 }
