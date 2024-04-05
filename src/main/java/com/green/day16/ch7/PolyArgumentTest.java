@@ -30,14 +30,17 @@ class Buyer {
     Buyer(int haveMoney){
         this.haveMoney = haveMoney;
     }
+
     void buy(Product product){
         this.haveMoney -= product.getPrice();
         this.haveBonusPoint += product.getBounusPoint();
         System.out.println(product + " (을)를 구매하였습니다.");
     }
+
     public String toString() {
         return "haveMoney: " + haveMoney + " haveBonusPoint: " + haveBonusPoint;
     }
+
    public void showMeTheMoney(){
        System.out.println("haveMoney: " + haveMoney + " haveBonusPoint: " + haveBonusPoint);
    }
