@@ -2,9 +2,9 @@ package com.green.day16.ch7;
 
 public class PolyTest2 {
     public static void main(String[] args) {
-        Dog dog = new Dog();
-        BullDog bullDog = new BullDog();
-        Cat cat = new Cat();
+        Animal dog = new Dog();
+        Animal bullDog = new BullDog();
+        Animal cat = new Cat();
         Animal ani = new Animal();
 
 //        dog = new BullDog();
