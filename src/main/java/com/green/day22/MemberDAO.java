@@ -32,7 +32,7 @@ public class MemberDAO {
            stat = conn.createStatement(); //
 
            result = stat.executeUpdate(sql);//sql에 전송하면서 결과를 알려줌
-
+                                            //영향받은 행 값을 리턴함
        } catch (SQLException e) {
            throw new RuntimeException(e);
        } catch (ClassNotFoundException e) {
@@ -41,6 +41,37 @@ public class MemberDAO {
            myConn.close(conn , stat);
        }
        return result;
+   }
+
+   public MemberEntity selMember(String memId){
+       String sql = String.format("SELECT mem_name, mem_number, addr, phone1, phone2, " +
+                                 "height, debut_date " +
+                                 "FROM member WHERE mem_id = '%s'", memId);
+//       String sql = String.format("SELECT *" +
+//               "FROM member WHERE mem_id = '%s'", memId); 어차피 다띄우는 거라 이렇게 해도 됨!!!
+
+       System.out.println(sql);
+       try(Connection conn = myConn.getConn();
+           Statement stat = conn.createStatement();
+           ResultSet rs = stat.executeQuery(sql)){
+           if(rs.next()){
+               MemberEntity entity = new MemberEntity();
+                entity.setMemId(memId);
+                entity.setMemName(rs.getString("mem_name"));
+                entity.setMemNumber(rs.getInt("mem_number"));
+                entity.setAddr(rs.getString("addr"));
+                entity.setPhone1(rs.getString("phone1"));
+                entity.setPhone2(rs.getString("phone2"));
+                entity.setHeight(rs.getInt("height"));
+                entity.setDebutDate(rs.getString("debut_date"));
+               return entity;
+           }
+           return null;
+       } catch (SQLException e) {
+           throw new RuntimeException(e);
+       } catch (ClassNotFoundException e) {
+           throw new RuntimeException(e);
+       }
    }
 
    public List<MemberEntity> selMemberList() {
@@ -54,7 +85,7 @@ public class MemberDAO {
 
        try(Connection conn = myConn.getConn();
            Statement stat = conn.createStatement();
-           ResultSet rs = stat.executeQuery(sql)) {
+           ResultSet rs = stat.executeQuery(sql)) { //결과가 담기는 객체
 
            while(rs.next()){ //레코드 있는 수만큼 반복
                String memId = rs.getString("mem_id");
@@ -221,5 +252,13 @@ class MemberDelTest{
         memberEntity.setMemId("NJS");
         int affectedRow = memberDAO.delete(memberEntity);
         System.out.println("affectedRow: " + affectedRow);
+    }
+}
+
+class SelMemberTest{
+    public static void main(String[] args) {
+        MemberDAO memberDAO = new MemberDAO();
+        MemberEntity memberEntity = memberDAO.selMember("WMN");
+        System.out.println(memberEntity);
     }
 }
